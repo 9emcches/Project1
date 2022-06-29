@@ -96,7 +96,7 @@ namespace GameVersion1
 
             }
 
-        }
+        } 
 
         /// <summary>
         /// sets false state for movement states when a key is up
@@ -125,10 +125,6 @@ namespace GameVersion1
             InitializeComponent();
         }
 
-        private void Level1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         /// <summary>
         /// Moving game assets relative to player
