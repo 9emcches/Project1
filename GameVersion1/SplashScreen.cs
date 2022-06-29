@@ -27,7 +27,7 @@ namespace GameVersion1
         void tmr_Tick(object sender, EventArgs e)
         {            
 
-            tmr.Stop(); //after 3 sec stop the timer
+            tmr.Stop(); 
             Level1 game = new Level1(); 
             game.Show(); //display game
             this.Hide();
@@ -96,6 +96,7 @@ namespace GameVersion1
 
 
         }
+
 
     }
 }

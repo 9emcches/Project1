@@ -62,6 +62,14 @@ namespace GameVersion1
             }
     
 
+            if (pbPlayer.Bounds.IntersectsWith(pbPortal.Bounds))
+            {
+                this.Close();
+                MainMenu test = new MainMenu();
+                test.Show();
+
+            }
+
 
             if (jumping == true) //if player is jumping
             {
@@ -96,7 +104,9 @@ namespace GameVersion1
 
             }
 
-        } 
+        }
+
+      
 
         /// <summary>
         /// sets false state for movement states when a key is up

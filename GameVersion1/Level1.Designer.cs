@@ -37,11 +37,13 @@ namespace GameVersion1
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pbPortal = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlat1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPortal)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPlayer
@@ -59,7 +61,7 @@ namespace GameVersion1
             this.pbPlat1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbPlat1.BackgroundImage")));
             this.pbPlat1.Location = new System.Drawing.Point(-150, 460);
             this.pbPlat1.Name = "pbPlat1";
-            this.pbPlat1.Size = new System.Drawing.Size(1553, 40);
+            this.pbPlat1.Size = new System.Drawing.Size(1664, 40);
             this.pbPlat1.TabIndex = 1;
             this.pbPlat1.TabStop = false;
             this.pbPlat1.Tag = "platform";
@@ -100,13 +102,25 @@ namespace GameVersion1
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Tag = "platform";
             // 
+            // pbPortal
+            // 
+            this.pbPortal.Image = ((System.Drawing.Image)(resources.GetObject("pbPortal.Image")));
+            this.pbPortal.Location = new System.Drawing.Point(1283, 399);
+            this.pbPortal.Name = "pbPortal";
+            this.pbPortal.Size = new System.Drawing.Size(44, 55);
+            this.pbPortal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPortal.TabIndex = 5;
+            this.pbPortal.TabStop = false;
+            this.pbPortal.Tag = "platform";
+            // 
             // Level1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(944, 501);
+            this.ClientSize = new System.Drawing.Size(1444, 501);
+            this.Controls.Add(this.pbPortal);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -124,6 +138,7 @@ namespace GameVersion1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPortal)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -136,5 +151,6 @@ namespace GameVersion1
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbPortal;
     }
 }
