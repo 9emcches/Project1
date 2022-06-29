@@ -101,7 +101,7 @@ namespace GameVersion1
             this.lblVersionInfo.Name = "lblVersionInfo";
             this.lblVersionInfo.Size = new System.Drawing.Size(212, 90);
             this.lblVersionInfo.TabIndex = 6;
-            this.lblVersionInfo.Text = "Version 5\r\nUpdate Notes//\r\nGame Graphics Adjusted -\r\nMovement system Adjusted -\r\n" +
+            this.lblVersionInfo.Text = "Version 6\r\nUpdate Notes//\r\nGame Graphics Adjusted -\r\nMovement system Adjusted -\r\n" +
     "Level Design Elements Added -\r\n";
             this.lblVersionInfo.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.lblVersionInfo.Click += new System.EventHandler(this.lblVersionInfo_Click);
