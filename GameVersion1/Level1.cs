@@ -13,11 +13,11 @@ namespace GameVersion1
     public partial class Level1 : Form
     {
 
-        bool moveLeft, moveRight, faceLeft, jumping;
-        int jumpSpeed;
-        int jumpForce;
+        bool moveLeft, moveRight, faceLeft, jumping, jumpComplete;
+        int force;
         const int SPEED = 7;
-        const int INTIALJUMPFORCE = 2;
+        const int  F= 10;
+        const int G = 5;
 
         /// <summary>
         /// sets true state for movement states when a key is down
@@ -37,10 +37,12 @@ namespace GameVersion1
                 
                 moveRight = true;
             }
-            if (e.KeyCode == Keys.Up && jumping == false) //if key is up
-            {
-                jumping = true;
-            }
+                if (e.KeyCode == Keys.Up && jumping == false) //if key is up
+                {
+                jumpComplete = false;
+                    jumping = true;
+                    force = F;
+                }
 
 
         }
@@ -48,10 +50,6 @@ namespace GameVersion1
 
         private void TimerEvent(object sender, EventArgs e)
         {
-
-            pbPlayer.Top += jumpSpeed;
-
-
             if (moveLeft == true) //if player wants to move left
             {
                 MoveGameParts("right"); //pass "right" to movegameparts method
@@ -73,18 +71,15 @@ namespace GameVersion1
 
             if (jumping == true) //if player is jumping
             {
-                jumpSpeed = -15;
-                jumpForce -= 1;
+                pbPlayer.Top -= force;
+                force -= 1;
             }
             else
             {
-                jumpSpeed = 15;
+                pbPlayer.Top += G;
             }
 
-            if (jumping == true && jumpForce < 0)
-            {
-                jumping = false;
-            }
+   
 
             foreach (Control x in this.Controls) //for each game asset
             {
@@ -92,9 +87,14 @@ namespace GameVersion1
                 {
                     if (pbPlayer.Bounds.IntersectsWith(x.Bounds) && jumping == false) //if player touches game asset
                     {
-                        jumpForce = 2;
+                        force = 0;
                         pbPlayer.Top = x.Top - pbPlayer.Height;
-                        jumpSpeed = 0;
+                        jumping = false;
+                    }
+                    if (jumping == true && pbPlayer.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        jumping = false;
+                        jumpComplete = true;
                     }
 
                 }
@@ -122,7 +122,7 @@ namespace GameVersion1
             {
                 moveRight = false;
             }
-            if (jumping == true)
+            if (jumping == true && jumpComplete == true)
             {
                 jumping = false;
             }
