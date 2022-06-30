@@ -27,10 +27,10 @@ namespace GameVersion1
         void tmr_Tick(object sender, EventArgs e)
         {            
 
-            tmr.Stop(); 
+            tmr.Stop(); //when loading complete stop timer
             Level1 game = new Level1(); 
             game.Show(); //display game
-            this.Hide();
+            this.Close();
 
         }
 

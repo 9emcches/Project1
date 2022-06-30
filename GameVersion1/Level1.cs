@@ -17,7 +17,7 @@ namespace GameVersion1
         int jumpSpeed;
         int jumpForce;
         const int SPEED = 7;
-
+        const int INTIALJUMPFORCE = 2;
 
         /// <summary>
         /// sets true state for movement states when a key is down
@@ -96,8 +96,6 @@ namespace GameVersion1
                         pbPlayer.Top = x.Top - pbPlayer.Height;
                         jumpSpeed = 0;
                     }
-
-                    x.BringToFront();
 
                 }
 
