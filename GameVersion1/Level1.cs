@@ -16,7 +16,7 @@ namespace GameVersion1
         bool moveLeft, moveRight, faceLeft, jumping, jumpComplete;
         int force;
         const int SPEED = 7;
-        const int  F= 10;
+        const int  F= 15;
         const int G = 5;
 
         /// <summary>
@@ -119,7 +119,7 @@ namespace GameVersion1
                     {
                         x.Left -= SPEED;
                     }
-                    if (pbPlayer.Right < x.Left && pbPlayer.Left > x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top)
+                    if (pbPlayer.Left < x.Right && pbPlayer.Right > x.Left + pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top)
                     {
                         x.Left += SPEED;
                     }
