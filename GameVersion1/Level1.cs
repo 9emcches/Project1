@@ -28,18 +28,15 @@ namespace GameVersion1
         {
             if (e.KeyCode == Keys.Left) //if key is left
             {
-        
-                
                 moveLeft = true;              
             }
             if (e.KeyCode == Keys.Right) //if key is right
             {
-                
                 moveRight = true;
             }
                 if (e.KeyCode == Keys.Up && jumping == false) //if key is up
                 {
-                jumpComplete = false;
+                    jumpComplete = false;
                     jumping = true;
                     force = F;
                 }
@@ -83,20 +80,49 @@ namespace GameVersion1
 
             foreach (Control x in this.Controls) //for each game asset
             {
-                if (x is PictureBox && (string)x.Tag == "platform")//if asset is tagged as "platform"
+                if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "movable")//if asset is tagged as "platform" or "movable"
                 {
-                    if (pbPlayer.Bounds.IntersectsWith(x.Bounds) && jumping == false) //if player touches game asset
+                    if (pbPlayer.Left + pbPlayer.Width - 1 > x.Left && pbPlayer.Left + pbPlayer.Width + 5 < x.Left + x.Width + pbPlayer.Width && pbPlayer.Top + pbPlayer.Height >= x.Top && pbPlayer.Top < x.Top) //if player touches game asset
                     {
                         force = 0;
                         pbPlayer.Top = x.Top - pbPlayer.Height;
                         jumping = false;
                     }
-                    if (jumping == true && pbPlayer.Bounds.IntersectsWith(x.Bounds))
+
+                    if (jumping == true && pbPlayer.Left + pbPlayer.Width - 1 > x.Left && pbPlayer.Left + pbPlayer.Width + 5 < x.Left + x.Width + pbPlayer.Width && pbPlayer.Top + pbPlayer.Height >= x.Top && pbPlayer.Top < x.Top)
                     {
                         jumping = false;
                         jumpComplete = true;
                     }
 
+                }
+
+                if (x is PictureBox && (string)x.Tag == "platform")
+                {
+
+                    if (pbPlayer.Right > x.Left && pbPlayer.Left < x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top)
+                    {
+                        moveRight = false;
+                        
+                    }
+                    if (pbPlayer.Left < x.Right && pbPlayer.Right > x.Left + pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top)
+                    {
+                        moveLeft = false;
+                        
+                    }
+                } 
+                    
+                if (x is PictureBox && (string)x.Tag == "movable")
+                {
+
+                    if (pbPlayer.Right > x.Left && pbPlayer.Left < x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top)
+                    {
+                        x.Left -= SPEED;
+                    }
+                    if (pbPlayer.Right < x.Left && pbPlayer.Left > x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top)
+                    {
+                        x.Left += SPEED;
+                    }
                 }
 
 
@@ -144,7 +170,7 @@ namespace GameVersion1
 
             foreach (Control x in this.Controls) //for each game asset
             {
-                if (x is PictureBox && (string)x.Tag == "platform") //if asset is tagged as "platform"
+                if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "movable") //if asset is tagged as "platform" or "movable"
                 {
                     if(direction == "left") //if player wants to move left
                     {
