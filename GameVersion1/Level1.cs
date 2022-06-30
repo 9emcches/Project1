@@ -13,10 +13,10 @@ namespace GameVersion1
     public partial class Level1 : Form
     {
 
-        bool moveLeft, moveRight, faceLeft, jumping, jumpComplete;
+        bool moveLeft, moveRight, jumping, jumpComplete, doubleJumpReady, doubleJumpComplete;
         int force;
         const int SPEED = 7;
-        const int  F= 15;
+        const int  F= 10;
         const int G = 5;
 
         /// <summary>
@@ -34,12 +34,20 @@ namespace GameVersion1
             {
                 moveRight = true;
             }
-                if (e.KeyCode == Keys.Up && jumping == false) //if key is up
-                {
-                    jumpComplete = false;
-                    jumping = true;
-                    force = F;
-                }
+            if (e.KeyCode == Keys.Up && jumping == false) //if key is up
+            {
+                jumpComplete = false;
+                jumping = true;
+                force = F;
+                doubleJumpReady = false;
+                doubleJumpComplete = false;
+            }
+            if (e.KeyCode == Keys.Up && doubleJumpReady == true)
+            {
+                doubleJumpReady = false;
+                force = F;
+                doubleJumpComplete = true;
+            }
 
 
         }
@@ -93,6 +101,8 @@ namespace GameVersion1
                     {
                         jumping = false;
                         jumpComplete = true;
+                        doubleJumpReady = true;
+                        doubleJumpComplete = false;
                     }
 
                 }
@@ -148,10 +158,15 @@ namespace GameVersion1
             {
                 moveRight = false;
             }
+            if (jumping == true && doubleJumpComplete == false)
+            {
+                doubleJumpReady = true;
+            }
             if (jumping == true && jumpComplete == true)
             {
                 jumping = false;
             }
+
         }
 
         public Level1()
