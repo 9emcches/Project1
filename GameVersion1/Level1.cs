@@ -58,24 +58,6 @@ namespace GameVersion1
         private void TimerEvent(object sender, EventArgs e)
         {
 
-            if (moveLeft == true) //if player wants to move left
-            {
-                MoveGameParts("right"); //pass "right" to movegameparts method
-            }
-            if (moveRight == true) //if player wants to move right
-            {
-                MoveGameParts("left"); //pass "left" to movegameparts method
-            }
-    
-
-            if (pbPlayer.Bounds.IntersectsWith(pbPortal.Bounds))
-            {
-                this.Close();
-                MainMenu test = new MainMenu();
-                test.Show();
-
-            }
-
 
             if (jumping == true) //if player is jumping
             {
@@ -135,18 +117,30 @@ namespace GameVersion1
                     }
                 }
 
+            }
+
+            if (moveLeft == true) //if player wants to move left
+            {
+                MoveGameParts("right"); //pass "right" to movegameparts method
+            }
+            if (moveRight == true) //if player wants to move right
+            {
+                MoveGameParts("left"); //pass "left" to movegameparts method
+            }
+
+
+            if (pbPlayer.Bounds.IntersectsWith(pbPortal.Bounds))
+            {
+                this.Close();
+                MainMenu test = new MainMenu();
+                test.Show();
 
             }
 
-        }
-
-
-        public void checkMovement()
-        {
 
         }
 
-      
+
 
         /// <summary>
         /// sets false state for movement states when a key is up
