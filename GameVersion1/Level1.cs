@@ -94,11 +94,11 @@ namespace GameVersion1
 
                 if (x is PictureBox && (string)x.Tag == "platform")
                 {
-                    if (pbPlayer.Right > x.Left && pbPlayer.Left < x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top)
+                    if (pbPlayer.Right > x.Left && pbPlayer.Left < x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom)
                     {
                         moveRight = false;
                     }
-                    if (pbPlayer.Left < x.Right && pbPlayer.Right > x.Left + pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top)
+                    if (pbPlayer.Left < x.Right && pbPlayer.Right > x.Left + pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom)
                     {
                         moveLeft = false;
                     }
