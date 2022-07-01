@@ -50,7 +50,7 @@ namespace GameVersion1
             this.pbPlayer.Location = new System.Drawing.Point(573, 454);
             this.pbPlayer.Margin = new System.Windows.Forms.Padding(4);
             this.pbPlayer.Name = "pbPlayer";
-            this.pbPlayer.Size = new System.Drawing.Size(53, 68);
+            this.pbPlayer.Size = new System.Drawing.Size(45, 65);
             this.pbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPlayer.TabIndex = 0;
             this.pbPlayer.TabStop = false;

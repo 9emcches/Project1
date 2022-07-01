@@ -28,11 +28,13 @@ namespace GameVersion1
         {
             if (e.KeyCode == Keys.Left) //if key is left
             {
-                moveLeft = true;              
+                moveLeft = true;
+                pbPlayer.Image = Image.FromFile("playerLeft1.png");
             }
             if (e.KeyCode == Keys.Right) //if key is right
             {
                 moveRight = true;
+                pbPlayer.Image = Image.FromFile("playerRight1.png");
             }
             if (e.KeyCode == Keys.Up && jumping == false) //if key is up
             {
@@ -55,6 +57,7 @@ namespace GameVersion1
 
         private void TimerEvent(object sender, EventArgs e)
         {
+
             if (moveLeft == true) //if player wants to move left
             {
                 MoveGameParts("right"); //pass "right" to movegameparts method
@@ -109,16 +112,13 @@ namespace GameVersion1
 
                 if (x is PictureBox && (string)x.Tag == "platform")
                 {
-
                     if (pbPlayer.Right > x.Left && pbPlayer.Left < x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top)
                     {
                         moveRight = false;
-                        
                     }
                     if (pbPlayer.Left < x.Right && pbPlayer.Right > x.Left + pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top)
                     {
                         moveLeft = false;
-                        
                     }
                 } 
                     
@@ -137,6 +137,12 @@ namespace GameVersion1
 
 
             }
+
+        }
+
+
+        public void checkMovement()
+        {
 
         }
 
