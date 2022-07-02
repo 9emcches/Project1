@@ -112,9 +112,11 @@ namespace GameVersion1
                     {
                         x.Left = pbPlayer.Left - x.Width; //player pushes movable object
                     }
+
+                    x.BringToFront();
                 }
 
-                if (x is PictureBox && (string)x.Tag == "spike")
+                if (x is PictureBox && (string)x.Tag == "danger")
                 {
                     if (pbPlayer.Bounds.IntersectsWith(x.Bounds)) //if player touches spike
                     {
@@ -199,7 +201,7 @@ namespace GameVersion1
 
             foreach (Control x in this.Controls) //for each game asset
             {
-                if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "movable" || x is PictureBox && (string)x.Tag == "spike" || x is Label) //if asset is tagged as "platform" or "movable" or "spike" or is a label
+                if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "movable" || x is PictureBox && (string)x.Tag == "danger" || x is Label) //if asset is tagged as "platform" or "movable" or "spike" or is a label
                 {
                     if(direction == "left") //if player wants to move left
                     {

@@ -141,7 +141,7 @@ namespace GameVersion1
             this.pbSpike.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSpike.TabIndex = 10;
             this.pbSpike.TabStop = false;
-            this.pbSpike.Tag = "spike";
+            this.pbSpike.Tag = "danger";
             // 
             // Level1
             // 
