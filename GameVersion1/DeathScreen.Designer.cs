@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeathScreen));
             this.pbDead = new System.Windows.Forms.PictureBox();
             this.lblInfo = new System.Windows.Forms.Label();
+            this.btnMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbDead)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,12 +59,27 @@
             this.lblInfo.Text = "Press [SPACE] to Respawn..\r\nOr Press [Esc] to Return to Main Menu...\r\n\r\n";
             this.lblInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(190)))), ((int)(((byte)(193)))));
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.Location = new System.Drawing.Point(40, 37);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(80, 37);
+            this.btnMenu.TabIndex = 9;
+            this.btnMenu.Text = "&Menu";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
             // DeathScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(942, 493);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.pbDead);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -81,5 +97,6 @@
 
         private System.Windows.Forms.PictureBox pbDead;
         private System.Windows.Forms.Label lblInfo;
+        private System.Windows.Forms.Button btnMenu;
     }
 }

@@ -10,11 +10,28 @@ using System.Windows.Forms;
 
 namespace GameVersion1
 {
-	public partial class Form1 : Form
-	{
-		public Form1()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class LevelSelect : Form
+    {
+
+        public static int selectedLevel;
+        public LevelSelect()
+        {
+            InitializeComponent();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            MainMenu menu = new MainMenu();
+            menu.Show();
+            this.Close();
+        }
+
+        private void btnTutor_Click(object sender, EventArgs e)
+        {
+            selectedLevel = 1;
+            SplashScreen loading = new SplashScreen();
+            loading.Show();
+            this.Hide();
+        }
+    }
 }

@@ -23,15 +23,18 @@ namespace GameVersion1
         const int LOADTIME = 2500; //1000 times how many seconds to load game
         Timer tmr;  //Use timer class
 
-
+        int destination = LevelSelect.selectedLevel;
         void tmr_Tick(object sender, EventArgs e)
         {            
 
             tmr.Stop(); //when loading complete stop timer
-            Level1 game = new Level1(); 
-            game.Show(); //display game
-            this.Close();
 
+            if (destination == 1)
+            {
+                Level1 game = new Level1();
+                game.Show(); //display game
+                this.Close();
+            }
         }
 
         private void SplashScreen_Shown_1(object sender, EventArgs e)

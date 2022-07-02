@@ -42,8 +42,8 @@ namespace GameVersion1
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            SplashScreen loading = new SplashScreen();
-            loading.Show();
+            LevelSelect select = new LevelSelect();
+            select.Show();
             this.Hide();
         }
 
