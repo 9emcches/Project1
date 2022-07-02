@@ -39,12 +39,14 @@ namespace GameVersion1
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblGuide1 = new System.Windows.Forms.Label();
+            this.pbSpike = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlat1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPortal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSpike)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPlayer
@@ -130,6 +132,17 @@ namespace GameVersion1
             this.lblGuide1.Tag = "label";
             this.lblGuide1.Text = "Arrow Keys To Move";
             // 
+            // pbSpike
+            // 
+            this.pbSpike.Image = ((System.Drawing.Image)(resources.GetObject("pbSpike.Image")));
+            this.pbSpike.Location = new System.Drawing.Point(1461, 543);
+            this.pbSpike.Name = "pbSpike";
+            this.pbSpike.Size = new System.Drawing.Size(25, 25);
+            this.pbSpike.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSpike.TabIndex = 10;
+            this.pbSpike.TabStop = false;
+            this.pbSpike.Tag = "spike";
+            // 
             // Level1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -137,6 +150,7 @@ namespace GameVersion1
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(190)))), ((int)(((byte)(193)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(2220, 617);
+            this.Controls.Add(this.pbSpike);
             this.Controls.Add(this.lblGuide1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -158,6 +172,7 @@ namespace GameVersion1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSpike)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,5 +188,6 @@ namespace GameVersion1
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblGuide1;
+        private System.Windows.Forms.PictureBox pbSpike;
     }
 }

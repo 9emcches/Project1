@@ -114,6 +114,18 @@ namespace GameVersion1
                     }
                 }
 
+                if (x is PictureBox && (string)x.Tag == "spike")
+                {
+                    if (pbPlayer.Bounds.IntersectsWith(x.Bounds)) //if player touches spike
+                    {
+                        this.Close(); //close this level
+                        DeathScreen dead = new DeathScreen(); //set next form
+                        dead.Show(); //show next form
+
+
+                    }
+                }
+
             }
 
             if (moveLeft == true) //if player wants to move left
@@ -187,7 +199,7 @@ namespace GameVersion1
 
             foreach (Control x in this.Controls) //for each game asset
             {
-                if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "movable" || x is Label) //if asset is tagged as "platform" or "movable" or is a label
+                if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "movable" || x is PictureBox && (string)x.Tag == "spike" || x is Label) //if asset is tagged as "platform" or "movable" or "spike" or is a label
                 {
                     if(direction == "left") //if player wants to move left
                     {
