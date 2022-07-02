@@ -16,8 +16,8 @@ namespace GameVersion1
         bool moveLeft, moveRight, jumping, jumpComplete, doubleJumpReady, doubleJumpComplete;
         int force;
         const int SPEED = 7;
-        const int  F= 10;
-        const int G = 5;
+        const int  JUMPFORCE= 10;
+        const int GRAVITY = 5;
 
         /// <summary>
         /// sets true state for movement states when a key is down
@@ -28,26 +28,26 @@ namespace GameVersion1
         {
             if (e.KeyCode == Keys.Left) //if key is left
             {
-                moveLeft = true;
-                pbPlayer.Image = Image.FromFile("playerLeft1.png");
+                moveLeft = true; //moving left
+                pbPlayer.Image = Image.FromFile("playerLeft1.png"); //player face left
             }
             if (e.KeyCode == Keys.Right) //if key is right
             {
-                moveRight = true;
-                pbPlayer.Image = Image.FromFile("playerRight1.png");
+                moveRight = true; //moving right
+                pbPlayer.Image = Image.FromFile("playerRight1.png"); //player face right
             }
             if (e.KeyCode == Keys.Up && jumping == false) //if key is up
             {
-                jumpComplete = false;
-                jumping = true;
-                force = F;
-                doubleJumpReady = false;
-                doubleJumpComplete = false;
+                jumpComplete = false; //set jump to incomplete
+                jumping = true; //set jumping to true
+                force = JUMPFORCE; //set force value to JUMPFORCE
+                doubleJumpReady = false; //set double jump ready false
+                doubleJumpComplete = false; //set double jump to incomplete
             }
-            if (e.KeyCode == Keys.Up && doubleJumpReady == true)
+            if (e.KeyCode == Keys.Up && doubleJumpReady == true) //if double jump ready and key is up
             {
                 doubleJumpReady = false;
-                force = F;
+                force = JUMPFORCE; //set force value to JUMPFORCE
                 doubleJumpComplete = true;
             }
 
@@ -61,26 +61,26 @@ namespace GameVersion1
 
             if (jumping == true) //if player is jumping
             {
-                pbPlayer.Top -= force;
-                force -= 1;
+                pbPlayer.Top -= force; //-force amount from player top value
+                force -= 1; //decrease force by -1
             }
             else
             {
-                pbPlayer.Top += G;
+                pbPlayer.Top += GRAVITY; //player pulled by gravity
             }
 
             foreach (Control x in this.Controls) //for each game asset
             {
                 if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "movable")//if asset is tagged as "platform" or "movable"
                 {
-                    if (pbPlayer.Left + pbPlayer.Width - 1 > x.Left && pbPlayer.Left + pbPlayer.Width + 5 < x.Left + x.Width + pbPlayer.Width && pbPlayer.Top + pbPlayer.Height >= x.Top && pbPlayer.Top < x.Top) //if player touches game asset
+                    if (pbPlayer.Left + pbPlayer.Width - 1 > x.Left && pbPlayer.Left + pbPlayer.Width + 5 < x.Left + x.Width + pbPlayer.Width && pbPlayer.Top + pbPlayer.Height >= x.Top && pbPlayer.Top < x.Top) //if player touches game asset top
                     {
-                        force = 0;
-                        pbPlayer.Top = x.Top - pbPlayer.Height;
+                        force = 0; //force set to 0 
+                        pbPlayer.Top = x.Top - pbPlayer.Height; //player position set on top of object
                         jumping = false;
                     }
 
-                    if (jumping == true && pbPlayer.Left + pbPlayer.Width - 1 > x.Left && pbPlayer.Left + pbPlayer.Width + 5 < x.Left + x.Width + pbPlayer.Width && pbPlayer.Top + pbPlayer.Height >= x.Top && pbPlayer.Top < x.Top)
+                    if (jumping == true && pbPlayer.Left + pbPlayer.Width - 1 > x.Left && pbPlayer.Left + pbPlayer.Width + 5 < x.Left + x.Width + pbPlayer.Width && pbPlayer.Top + pbPlayer.Height >= x.Top && pbPlayer.Top < x.Top) //if player touches game asset top and is jumping
                     {
                         jumping = false;
                         jumpComplete = true;
@@ -106,11 +106,11 @@ namespace GameVersion1
 
                     if (pbPlayer.Right > x.Left && pbPlayer.Left < x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom)
                     {
-                        x.Left = pbPlayer.Right;
+                        x.Left = pbPlayer.Right; //player pushes movable object
                     }
                     if (pbPlayer.Left < x.Right && pbPlayer.Right > x.Left + pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom)
                     {
-                        x.Left = pbPlayer.Left - x.Width;
+                        x.Left = pbPlayer.Left - x.Width; //player pushes movable object
                     }
                 }
 
@@ -131,11 +131,11 @@ namespace GameVersion1
 
 
 
-            if (pbPlayer.Bounds.IntersectsWith(pbPortal.Bounds))
+            if (pbPlayer.Bounds.IntersectsWith(pbPortal.Bounds)) //if player touches portal
             {
-                this.Close();
-                MainMenu test = new MainMenu();
-                test.Show();
+                this.Close(); //close this level
+                MainMenu test = new MainMenu(); //set next form
+                test.Show(); //show next form
 
             }
 
@@ -152,19 +152,19 @@ namespace GameVersion1
 
         private void KeyIsUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.Left) // if key up is left arrow
             {
                 moveLeft = false;
             }
-            if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.Right) // if key up is right arrow 
             {
                 moveRight = false;
             }
-            if (jumping == true && doubleJumpComplete == false)
+            if (jumping == true && doubleJumpComplete == false) // if jump key up and double jump action has not been performed
             {
-                doubleJumpReady = true;
+                doubleJumpReady = true; //double jump ready set ready
             }
-            if (jumping == true && jumpComplete == true)
+            if (jumping == true && jumpComplete == true) // if jumping is still set true but jump complete
             {
                 jumping = false;
             }
@@ -187,7 +187,7 @@ namespace GameVersion1
 
             foreach (Control x in this.Controls) //for each game asset
             {
-                if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "movable") //if asset is tagged as "platform" or "movable"
+                if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "movable" || x is Label) //if asset is tagged as "platform" or "movable" or is a label
                 {
                     if(direction == "left") //if player wants to move left
                     {

@@ -38,6 +38,7 @@ namespace GameVersion1
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblGuide1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlat1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPortal)).BeginInit();
@@ -119,6 +120,16 @@ namespace GameVersion1
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Tag = "platform";
             // 
+            // lblGuide1
+            // 
+            this.lblGuide1.AutoSize = true;
+            this.lblGuide1.Location = new System.Drawing.Point(343, 454);
+            this.lblGuide1.Name = "lblGuide1";
+            this.lblGuide1.Size = new System.Drawing.Size(138, 17);
+            this.lblGuide1.TabIndex = 9;
+            this.lblGuide1.Tag = "label";
+            this.lblGuide1.Text = "Arrow Keys To Move";
+            // 
             // Level1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -126,6 +137,7 @@ namespace GameVersion1
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(190)))), ((int)(((byte)(193)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(2220, 617);
+            this.Controls.Add(this.lblGuide1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -147,6 +159,7 @@ namespace GameVersion1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -159,5 +172,6 @@ namespace GameVersion1
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label lblGuide1;
     }
 }
