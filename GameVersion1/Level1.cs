@@ -69,8 +69,6 @@ namespace GameVersion1
                 pbPlayer.Top += G;
             }
 
-   
-
             foreach (Control x in this.Controls) //for each game asset
             {
                 if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "movable")//if asset is tagged as "platform" or "movable"
@@ -89,7 +87,6 @@ namespace GameVersion1
                         doubleJumpReady = true;
                         doubleJumpComplete = false;
                     }
-
                 }
 
                 if (x is PictureBox && (string)x.Tag == "platform")
@@ -107,13 +104,13 @@ namespace GameVersion1
                 if (x is PictureBox && (string)x.Tag == "movable")
                 {
 
-                    if (pbPlayer.Right > x.Left && pbPlayer.Left < x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top)
+                    if (pbPlayer.Right > x.Left && pbPlayer.Left < x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom)
                     {
-                        x.Left -= SPEED;
+                        x.Left = pbPlayer.Right;
                     }
-                    if (pbPlayer.Left < x.Right && pbPlayer.Right > x.Left + pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top)
+                    if (pbPlayer.Left < x.Right && pbPlayer.Right > x.Left + pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom)
                     {
-                        x.Left += SPEED;
+                        x.Left = pbPlayer.Left - x.Width;
                     }
                 }
 
@@ -127,6 +124,11 @@ namespace GameVersion1
             {
                 MoveGameParts("left"); //pass "left" to movegameparts method
             }
+
+
+
+
+
 
 
             if (pbPlayer.Bounds.IntersectsWith(pbPortal.Bounds))
