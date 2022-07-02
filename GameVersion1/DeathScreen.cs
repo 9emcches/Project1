@@ -15,14 +15,15 @@ namespace GameVersion1
         public DeathScreen()
         {
             InitializeComponent();
+            btnMenu.TabStop = false;
         }
 
-        int destination = LevelSelect.selectedLevel;
         private void DeathScreen_KeyDown(object sender, KeyEventArgs e)
         {
+
             if (e.KeyCode == Keys.Space) //if key is space
             {
-                if (destination == 1)
+                if (LevelSelect.selectedLevel == 1)
                 {
                     Level1 game = new Level1();
                     game.Show(); //display game
