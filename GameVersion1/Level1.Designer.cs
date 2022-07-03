@@ -137,7 +137,7 @@ namespace GameVersion1
             this.pbSpike.Image = ((System.Drawing.Image)(resources.GetObject("pbSpike.Image")));
             this.pbSpike.Location = new System.Drawing.Point(1456, 538);
             this.pbSpike.Name = "pbSpike";
-            this.pbSpike.Size = new System.Drawing.Size(30, 30);
+            this.pbSpike.Size = new System.Drawing.Size(90, 30);
             this.pbSpike.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSpike.TabIndex = 10;
             this.pbSpike.TabStop = false;
