@@ -26,12 +26,17 @@ namespace GameVersion1
             this.Close();
         }
 
-        private void btnTutor_Click(object sender, EventArgs e)
+        private void btn1_Click(object sender, EventArgs e)
         {
             selectedLevel = 1;
             SplashScreen loading = new SplashScreen();
             loading.Show();
             this.Hide();
+        }
+
+        private void btn1_Hover(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,23 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnTutor = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LevelSelect));
+            this.btn1 = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.pbPreview = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPreview)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnTutor
+            // btn1
             // 
-            this.btnTutor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(0)))));
-            this.btnTutor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTutor.Location = new System.Drawing.Point(90, 120);
-            this.btnTutor.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTutor.Name = "btnTutor";
-            this.btnTutor.Size = new System.Drawing.Size(160, 37);
-            this.btnTutor.TabIndex = 2;
-            this.btnTutor.Text = "&Tutorial";
-            this.btnTutor.UseVisualStyleBackColor = false;
-            this.btnTutor.Click += new System.EventHandler(this.btnTutor_Click);
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(0)))));
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.Location = new System.Drawing.Point(90, 120);
+            this.btn1.Margin = new System.Windows.Forms.Padding(4);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(160, 37);
+            this.btn1.TabIndex = 2;
+            this.btn1.Text = "Level 1";
+            this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btn1.MouseHover += new System.EventHandler(this.btn1_Hover);
             // 
             // btnBack
             // 
@@ -60,25 +64,37 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // pbPreview
+            // 
+            this.pbPreview.Image = ((System.Drawing.Image)(resources.GetObject("pbPreview.Image")));
+            this.pbPreview.Location = new System.Drawing.Point(420, 111);
+            this.pbPreview.Name = "pbPreview";
+            this.pbPreview.Size = new System.Drawing.Size(349, 279);
+            this.pbPreview.TabIndex = 5;
+            this.pbPreview.TabStop = false;
+            // 
             // LevelSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(942, 493);
+            this.Controls.Add(this.pbPreview);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.btnTutor);
+            this.Controls.Add(this.btn1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LevelSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LevelSelect";
+            ((System.ComponentModel.ISupportInitialize)(this.pbPreview)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnTutor;
+        private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.PictureBox pbPreview;
     }
 }

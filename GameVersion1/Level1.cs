@@ -19,6 +19,7 @@ namespace GameVersion1
         const int  JUMPFORCE= 10;
         const int GRAVITY = 5;
 
+
         /// <summary>
         /// sets true state for movement states when a key is down
         /// </summary>
@@ -50,7 +51,12 @@ namespace GameVersion1
                 force = JUMPFORCE; //set force value to JUMPFORCE
                 doubleJumpComplete = true;
             }
-
+            if (e.KeyCode == Keys.R) //if key is left
+            {
+                this.Close(); //close this level
+                DeathScreen dead = new DeathScreen(); //set next form
+                dead.Show(); //show next form
+            }
 
         }
 
