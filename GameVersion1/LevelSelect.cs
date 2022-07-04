@@ -46,5 +46,13 @@ namespace GameVersion1
             loading.Show();
             this.Hide();
         }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            selectedLevel = 3;
+            SplashScreen loading = new SplashScreen();
+            loading.Show();
+            this.Hide();
+        }
     }
 }

@@ -39,6 +39,12 @@ namespace GameVersion1
                 game.Show();
                 this.Close();
             }
+            if (LevelSelect.selectedLevel == 3)
+            {
+                Level3 game = new Level3();
+                game.Show();
+                this.Close();
+            }
         }
     }
 }
