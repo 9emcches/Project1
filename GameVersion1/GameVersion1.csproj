@@ -64,6 +64,12 @@
     <Compile Include="Level1.Designer.cs">
       <DependentUpon>Level1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level2.Designer.cs">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </Compile>
     <Compile Include="LevelSelect.cs">
       <SubType>Form</SubType>
     </Compile>
