@@ -46,6 +46,12 @@ namespace GameVersion1
                 game.Show(); //display game
                 this.Close();
             }
+            if (LevelSelect.selectedLevel == 4)
+            {
+                Level4 game = new Level4();
+                game.Show(); //display game
+                this.Close();
+            }
         }
 
         private void SplashScreen_Shown_1(object sender, EventArgs e)

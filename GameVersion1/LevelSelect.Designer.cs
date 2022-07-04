@@ -34,6 +34,7 @@
             this.pbPreview = new System.Windows.Forms.PictureBox();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbPreview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             this.btn1.Location = new System.Drawing.Point(90, 120);
             this.btn1.Margin = new System.Windows.Forms.Padding(4);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(160, 37);
+            this.btn1.Size = new System.Drawing.Size(130, 37);
             this.btn1.TabIndex = 2;
             this.btn1.Text = "Level 1";
             this.btn1.UseVisualStyleBackColor = false;
@@ -83,7 +84,7 @@
             this.btn2.Location = new System.Drawing.Point(90, 200);
             this.btn2.Margin = new System.Windows.Forms.Padding(4);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(160, 37);
+            this.btn2.Size = new System.Drawing.Size(130, 37);
             this.btn2.TabIndex = 6;
             this.btn2.Text = "Level 2";
             this.btn2.UseVisualStyleBackColor = false;
@@ -97,11 +98,25 @@
             this.btn3.Location = new System.Drawing.Point(90, 280);
             this.btn3.Margin = new System.Windows.Forms.Padding(4);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(160, 37);
+            this.btn3.Size = new System.Drawing.Size(130, 37);
             this.btn3.TabIndex = 7;
             this.btn3.Text = "Level 3";
             this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            // 
+            // btn4
+            // 
+            this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(0)))));
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4.Location = new System.Drawing.Point(90, 360);
+            this.btn4.Margin = new System.Windows.Forms.Padding(4);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(130, 37);
+            this.btn4.TabIndex = 8;
+            this.btn4.Text = "Level 4";
+            this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // LevelSelect
             // 
@@ -109,6 +124,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(942, 493);
+            this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.pbPreview);
@@ -131,5 +147,6 @@
         private System.Windows.Forms.PictureBox pbPreview;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.Button btn4;
     }
 }

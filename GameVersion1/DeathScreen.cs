@@ -45,6 +45,12 @@ namespace GameVersion1
                 game.Show();
                 this.Close();
             }
+            if (LevelSelect.selectedLevel == 4)
+            {
+                Level4 game = new Level4();
+                game.Show(); //display game
+                this.Close();
+            }
         }
     }
 }
