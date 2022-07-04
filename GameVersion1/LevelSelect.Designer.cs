@@ -32,6 +32,7 @@
             this.btn1 = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.pbPreview = new System.Windows.Forms.PictureBox();
+            this.btn2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbPreview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,12 +74,27 @@
             this.pbPreview.TabIndex = 5;
             this.pbPreview.TabStop = false;
             // 
+            // btn2
+            // 
+            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(0)))));
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.Location = new System.Drawing.Point(90, 199);
+            this.btn2.Margin = new System.Windows.Forms.Padding(4);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(160, 37);
+            this.btn2.TabIndex = 6;
+            this.btn2.Text = "Level 2";
+            this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            // 
             // LevelSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(942, 493);
+            this.Controls.Add(this.btn2);
             this.Controls.Add(this.pbPreview);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btn1);
@@ -97,5 +113,6 @@
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.PictureBox pbPreview;
+        private System.Windows.Forms.Button btn2;
     }
 }

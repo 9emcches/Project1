@@ -33,7 +33,7 @@ namespace GameVersion1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level1));
             this.pbPlayer = new System.Windows.Forms.PictureBox();
             this.pbPlat1 = new System.Windows.Forms.PictureBox();
-            this.Movement = new System.Windows.Forms.Timer(this.components);
+            this.GameTimer = new System.Windows.Forms.Timer(this.components);
             this.pbPortal = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -99,11 +99,11 @@ namespace GameVersion1
             this.pbPlat1.TabStop = false;
             this.pbPlat1.Tag = "platform";
             // 
-            // Movement
+            // GameTimer
             // 
-            this.Movement.Enabled = true;
-            this.Movement.Interval = 20;
-            this.Movement.Tick += new System.EventHandler(this.TimerEvent);
+            this.GameTimer.Enabled = true;
+            this.GameTimer.Interval = 20;
+            this.GameTimer.Tick += new System.EventHandler(this.TimerEvent);
             // 
             // pbPortal
             // 
@@ -413,7 +413,7 @@ namespace GameVersion1
 
         private System.Windows.Forms.PictureBox pbPlayer;
         private System.Windows.Forms.PictureBox pbPlat1;
-        private System.Windows.Forms.Timer Movement;
+        private System.Windows.Forms.Timer GameTimer;
         private System.Windows.Forms.PictureBox pbPortal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;

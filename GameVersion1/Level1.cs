@@ -106,11 +106,11 @@ namespace GameVersion1
 
                 if (x is PictureBox && (string)x.Tag == "platform")
                 {
-                    if (pbPlayer.Right > x.Left && pbPlayer.Left < x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom)
+                    if (pbPlayer.Right > x.Left && pbPlayer.Left < x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom) //if player touching platform side
                     {
                         moveRight = false;
                     }
-                    if (pbPlayer.Left < x.Right && pbPlayer.Right > x.Left + pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom)
+                    if (pbPlayer.Left < x.Right && pbPlayer.Right > x.Left + pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom) //if player touching platform side
                     {
                         moveLeft = false;
                     }
@@ -119,11 +119,11 @@ namespace GameVersion1
                 if (x is PictureBox && (string)x.Tag == "movable")
                 {
 
-                    if (pbPlayer.Right > x.Left && pbPlayer.Left < x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom)
+                    if (pbPlayer.Right > x.Left && pbPlayer.Left < x.Right - pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom) //if player touching movable side
                     {
                         x.Left = pbPlayer.Right; //player pushes movable object
                     }
-                    if (pbPlayer.Left < x.Right && pbPlayer.Right > x.Left + pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom)
+                    if (pbPlayer.Left < x.Right && pbPlayer.Right > x.Left + pbPlayer.Width / 2 && pbPlayer.Bottom > x.Top && pbPlayer.Top < x.Bottom) //if player touching movable side
                     {
                         x.Left = pbPlayer.Left - x.Width; //player pushes movable object
                     }
@@ -163,8 +163,8 @@ namespace GameVersion1
             if (pbPlayer.Bounds.IntersectsWith(pbPortal.Bounds)) //if player touches portal
             {
                 this.Close(); //close this level
-                MainMenu test = new MainMenu(); //set next form
-                test.Show(); //show next form
+                Level2 game = new Level2(); //set next form
+                game.Show(); //show next form
 
             }
 
