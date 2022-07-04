@@ -75,6 +75,7 @@ namespace GameVersion1
                 pbPlayer.Top += GRAVITY; //player pulled by gravity
             }
 
+
             foreach (Control x in this.Controls) //for each game asset
             {
                 if (x is PictureBox && (string)x.Tag == "platform" || x is PictureBox && (string)x.Tag == "movable")//if asset is tagged as "platform" or "movable"
