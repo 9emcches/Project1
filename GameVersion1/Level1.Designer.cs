@@ -57,6 +57,7 @@ namespace GameVersion1
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlat1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPortal)).BeginInit();
@@ -77,6 +78,7 @@ namespace GameVersion1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.SuspendLayout();
             // 
             // pbPlayer
@@ -96,7 +98,7 @@ namespace GameVersion1
             this.pbPlat1.Location = new System.Drawing.Point(-200, 566);
             this.pbPlat1.Margin = new System.Windows.Forms.Padding(4);
             this.pbPlat1.Name = "pbPlat1";
-            this.pbPlat1.Size = new System.Drawing.Size(2751, 49);
+            this.pbPlat1.Size = new System.Drawing.Size(2811, 49);
             this.pbPlat1.TabIndex = 1;
             this.pbPlat1.TabStop = false;
             this.pbPlat1.Tag = "platform";
@@ -358,6 +360,17 @@ namespace GameVersion1
             this.pictureBox16.TabStop = false;
             this.pictureBox16.Tag = "platform";
             // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox17.BackgroundImage")));
+            this.pictureBox17.Location = new System.Drawing.Point(2516, 64);
+            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(64, 504);
+            this.pictureBox17.TabIndex = 28;
+            this.pictureBox17.TabStop = false;
+            this.pictureBox17.Tag = "platform";
+            // 
             // Level1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -365,6 +378,7 @@ namespace GameVersion1
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(190)))), ((int)(((byte)(193)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(2564, 617);
+            this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -419,6 +433,7 @@ namespace GameVersion1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -452,5 +467,6 @@ namespace GameVersion1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox pictureBox17;
     }
 }

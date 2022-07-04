@@ -197,6 +197,7 @@ namespace GameVersion1
 
         public Level1()
         {
+            LevelSelect.selectedLevel = 1;
             InitializeComponent();
             pbPlayer.SendToBack();
         }

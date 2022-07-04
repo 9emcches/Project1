@@ -155,7 +155,7 @@ namespace GameVersion1
             if (pbPlayer.Bounds.IntersectsWith(pbPortal.Bounds)) //if player touches portal
             {
                 this.Close(); //close this level
-                Level2 game = new Level2(); //set next form
+                Level4 game = new Level4(); //set next form
                 game.Show(); //show next form
 
             }
@@ -193,6 +193,7 @@ namespace GameVersion1
 
         public Level3()
         {
+            LevelSelect.selectedLevel = 3;
             InitializeComponent();
             pbPlayer.SendToBack();
         }

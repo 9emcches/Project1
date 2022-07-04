@@ -112,10 +112,10 @@
             // pbPortal
             // 
             this.pbPortal.Image = ((System.Drawing.Image)(resources.GetObject("pbPortal.Image")));
-            this.pbPortal.Location = new System.Drawing.Point(2376, 453);
+            this.pbPortal.Location = new System.Drawing.Point(2376, 469);
             this.pbPortal.Margin = new System.Windows.Forms.Padding(4);
             this.pbPortal.Name = "pbPortal";
-            this.pbPortal.Size = new System.Drawing.Size(59, 68);
+            this.pbPortal.Size = new System.Drawing.Size(68, 52);
             this.pbPortal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPortal.TabIndex = 6;
             this.pbPortal.TabStop = false;
