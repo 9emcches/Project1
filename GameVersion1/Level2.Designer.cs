@@ -112,10 +112,10 @@
             // pbPortal
             // 
             this.pbPortal.Image = ((System.Drawing.Image)(resources.GetObject("pbPortal.Image")));
-            this.pbPortal.Location = new System.Drawing.Point(2376, 469);
+            this.pbPortal.Location = new System.Drawing.Point(2507, 473);
             this.pbPortal.Margin = new System.Windows.Forms.Padding(4);
             this.pbPortal.Name = "pbPortal";
-            this.pbPortal.Size = new System.Drawing.Size(68, 52);
+            this.pbPortal.Size = new System.Drawing.Size(63, 69);
             this.pbPortal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPortal.TabIndex = 6;
             this.pbPortal.TabStop = false;
@@ -262,7 +262,7 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(2251, 542);
+            this.pictureBox12.Location = new System.Drawing.Point(2174, 542);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(270, 30);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -364,7 +364,7 @@
             this.pictureBox22.Location = new System.Drawing.Point(2487, -30);
             this.pictureBox22.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(95, 602);
+            this.pictureBox22.Size = new System.Drawing.Size(95, 422);
             this.pictureBox22.TabIndex = 50;
             this.pictureBox22.TabStop = false;
             this.pictureBox22.Tag = "platform";
