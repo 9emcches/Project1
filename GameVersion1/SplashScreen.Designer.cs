@@ -54,7 +54,7 @@ namespace GameVersion1
             // 
             // lblFact
             // 
-            this.lblFact.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFact.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFact.Location = new System.Drawing.Point(130, 250);
             this.lblFact.Name = "lblFact";
             this.lblFact.Size = new System.Drawing.Size(700, 100);
@@ -64,7 +64,7 @@ namespace GameVersion1
             // 
             // lblDidYouKnow
             // 
-            this.lblDidYouKnow.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDidYouKnow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDidYouKnow.Location = new System.Drawing.Point(130, 210);
             this.lblDidYouKnow.Name = "lblDidYouKnow";
             this.lblDidYouKnow.Size = new System.Drawing.Size(700, 40);
@@ -84,7 +84,7 @@ namespace GameVersion1
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(130, 460);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(700, 20);
@@ -94,7 +94,7 @@ namespace GameVersion1
             // 
             // SplashScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(944, 501);
@@ -103,8 +103,9 @@ namespace GameVersion1
             this.Controls.Add(this.lblDidYouKnow);
             this.Controls.Add(this.lblFact);
             this.Controls.Add(this.pbLogo);
-            this.Font = new System.Drawing.Font("OCR A Extended", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "SplashScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loading";

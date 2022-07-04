@@ -46,7 +46,7 @@ namespace GameVersion1
             this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlay.Location = new System.Drawing.Point(187, 246);
-            this.btnPlay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(4);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(160, 37);
             this.btnPlay.TabIndex = 1;
@@ -60,11 +60,11 @@ namespace GameVersion1
             this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHelp.Location = new System.Drawing.Point(187, 345);
-            this.btnHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHelp.Margin = new System.Windows.Forms.Padding(4);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(160, 37);
             this.btnHelp.TabIndex = 2;
-            this.btnHelp.Text = "&Help";
+            this.btnHelp.Text = "&Instructions";
             this.btnHelp.UseVisualStyleBackColor = false;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
@@ -74,7 +74,7 @@ namespace GameVersion1
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(187, 443);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(160, 37);
             this.btnExit.TabIndex = 4;
@@ -89,7 +89,7 @@ namespace GameVersion1
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
             this.pbLogo.Location = new System.Drawing.Point(107, 49);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(4);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(748, 130);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -101,13 +101,13 @@ namespace GameVersion1
             this.lblVersionInfo.AutoSize = true;
             this.lblVersionInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersionInfo.ForeColor = System.Drawing.Color.Lime;
-            this.lblVersionInfo.Location = new System.Drawing.Point(965, 495);
+            this.lblVersionInfo.Location = new System.Drawing.Point(970, 457);
             this.lblVersionInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVersionInfo.Name = "lblVersionInfo";
-            this.lblVersionInfo.Size = new System.Drawing.Size(276, 120);
+            this.lblVersionInfo.Size = new System.Drawing.Size(276, 168);
             this.lblVersionInfo.TabIndex = 6;
-            this.lblVersionInfo.Text = "Version 6\r\nUpdate Notes//\r\nGame Graphics Adjusted -\r\nMovement system Adjusted -\r\n" +
-    "Level Design Elements Added -\r\n";
+            this.lblVersionInfo.Text = "Version 6 (Final)\r\nUpdate Notes//\r\nGame Graphics Adjusted -\r\nMovement system Adju" +
+    "sted -\r\nLevel Design Elements Added -\r\nBug Fixes and Polish -\r\n\r\n";
             this.lblVersionInfo.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.lblVersionInfo.Click += new System.EventHandler(this.lblVersionInfo_Click);
             // 
@@ -115,7 +115,7 @@ namespace GameVersion1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(613, 260);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(264, 220);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -135,7 +135,8 @@ namespace GameVersion1
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnPlay);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();

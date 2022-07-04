@@ -202,6 +202,7 @@ namespace GameVersion1
         public Level1()
         {
             InitializeComponent();
+            pbPlayer.SendToBack();
         }
 
 

@@ -41,8 +41,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbDead.Image = ((System.Drawing.Image)(resources.GetObject("pbDead.Image")));
-            this.pbDead.Location = new System.Drawing.Point(163, -21);
-            this.pbDead.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbDead.Location = new System.Drawing.Point(217, -26);
+            this.pbDead.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbDead.Name = "pbDead";
             this.pbDead.Size = new System.Drawing.Size(360, 360);
             this.pbDead.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -54,9 +54,10 @@
             this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(190)))), ((int)(((byte)(193)))));
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenu.Location = new System.Drawing.Point(206, 344);
+            this.btnMenu.Location = new System.Drawing.Point(275, 423);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(105, 30);
+            this.btnMenu.Size = new System.Drawing.Size(140, 37);
             this.btnMenu.TabIndex = 9;
             this.btnMenu.Text = "&Menu";
             this.btnMenu.UseVisualStyleBackColor = false;
@@ -67,9 +68,10 @@
             this.btnRespawn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(190)))), ((int)(((byte)(193)))));
             this.btnRespawn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRespawn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRespawn.Location = new System.Drawing.Point(370, 344);
+            this.btnRespawn.Location = new System.Drawing.Point(493, 423);
+            this.btnRespawn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRespawn.Name = "btnRespawn";
-            this.btnRespawn.Size = new System.Drawing.Size(105, 30);
+            this.btnRespawn.Size = new System.Drawing.Size(140, 37);
             this.btnRespawn.TabIndex = 10;
             this.btnRespawn.Text = "&Respawn";
             this.btnRespawn.UseVisualStyleBackColor = false;
@@ -77,15 +79,16 @@
             // 
             // DeathScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(706, 401);
+            this.ClientSize = new System.Drawing.Size(941, 494);
             this.Controls.Add(this.btnRespawn);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.pbDead);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "DeathScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeathScreen";
