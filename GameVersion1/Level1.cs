@@ -95,13 +95,6 @@ namespace GameVersion1
                         doubleJumpComplete = false;
                     }
 
-                    if (pbPlayer.Left + pbPlayer.Width - 1 > x.Left && pbPlayer.Left + pbPlayer.Width + 5 < x.Left + x.Width + pbPlayer.Width && pbPlayer.Bottom - pbPlayer.Height >= x.Bottom && pbPlayer.Bottom > x.Bottom)
-                    {
-                        jumping = false;
-                        jumpComplete = false;
-                        doubleJumpReady = false;
-
-                    }
                 }
 
                 if (x is PictureBox && (string)x.Tag == "platform")
@@ -141,6 +134,8 @@ namespace GameVersion1
 
 
                     }
+
+                    x.SendToBack();
                 }
 
             }
