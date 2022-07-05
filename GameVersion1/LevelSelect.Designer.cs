@@ -44,14 +44,14 @@
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.Location = new System.Drawing.Point(133, 148);
-            this.btn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn1.Margin = new System.Windows.Forms.Padding(4);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(131, 37);
             this.btn1.TabIndex = 2;
             this.btn1.Text = "Level 1";
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
-            this.btn1.MouseHover += new System.EventHandler(this.btn1_Hover);
+            this.btn1.MouseHover += new System.EventHandler(this.btn1_MouseHover);
             // 
             // btnBack
             // 
@@ -59,7 +59,7 @@
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.Location = new System.Drawing.Point(40, 37);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(160, 37);
             this.btnBack.TabIndex = 4;
@@ -70,10 +70,11 @@
             // pbPreview
             // 
             this.pbPreview.Image = ((System.Drawing.Image)(resources.GetObject("pbPreview.Image")));
-            this.pbPreview.Location = new System.Drawing.Point(523, 118);
+            this.pbPreview.Location = new System.Drawing.Point(454, 148);
             this.pbPreview.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbPreview.Name = "pbPreview";
-            this.pbPreview.Size = new System.Drawing.Size(479, 393);
+            this.pbPreview.Size = new System.Drawing.Size(699, 332);
+            this.pbPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPreview.TabIndex = 5;
             this.pbPreview.TabStop = false;
             // 
@@ -83,13 +84,14 @@
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.Location = new System.Drawing.Point(133, 246);
-            this.btn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn2.Margin = new System.Windows.Forms.Padding(4);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(131, 37);
             this.btn2.TabIndex = 6;
             this.btn2.Text = "Level 2";
             this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btn2.MouseHover += new System.EventHandler(this.btn2_MouseHover);
             // 
             // btn3
             // 
@@ -97,13 +99,14 @@
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.Location = new System.Drawing.Point(133, 345);
-            this.btn3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn3.Margin = new System.Windows.Forms.Padding(4);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(131, 37);
             this.btn3.TabIndex = 7;
             this.btn3.Text = "Level 3";
             this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            this.btn3.MouseHover += new System.EventHandler(this.btn3_MouseHover);
             // 
             // btn4
             // 
@@ -111,13 +114,14 @@
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.Location = new System.Drawing.Point(133, 443);
-            this.btn4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn4.Margin = new System.Windows.Forms.Padding(4);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(131, 37);
             this.btn4.TabIndex = 8;
             this.btn4.Text = "Level 4";
             this.btn4.UseVisualStyleBackColor = false;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            this.btn4.MouseHover += new System.EventHandler(this.btn4_MouseHover);
             // 
             // LevelSelect
             // 

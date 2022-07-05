@@ -34,10 +34,6 @@ namespace GameVersion1
             this.Hide();
         }
 
-        private void btn1_Hover(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn2_Click(object sender, EventArgs e)
         {
@@ -61,6 +57,26 @@ namespace GameVersion1
             SplashScreen loading = new SplashScreen();
             loading.Show();
             this.Hide();
+        }
+
+        private void btn1_MouseHover(object sender, EventArgs e)
+        {
+            pbPreview.Image = Image.FromFile("lvl1.png");
+        }
+
+        private void btn2_MouseHover(object sender, EventArgs e)
+        {
+            pbPreview.Image = Image.FromFile("lvl2.png");
+        }
+
+        private void btn3_MouseHover(object sender, EventArgs e)
+        {
+            pbPreview.Image = Image.FromFile("lvl3.png");
+        }
+
+        private void btn4_MouseHover(object sender, EventArgs e)
+        {
+            pbPreview.Image = Image.FromFile("lvl4.png");
         }
     }
 }
