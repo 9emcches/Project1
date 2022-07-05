@@ -29,8 +29,13 @@ namespace GameVersion1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstructionsPage));
             this.btnBack = new System.Windows.Forms.Button();
             this.lblHelpText = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pbPortal = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPortal)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBack
@@ -56,8 +61,34 @@ namespace GameVersion1
             this.lblHelpText.Name = "lblHelpText";
             this.lblHelpText.Size = new System.Drawing.Size(870, 380);
             this.lblHelpText.TabIndex = 4;
-            this.lblHelpText.Text = "Controls:\r\n-Movement:\r\n+Move Left [Left Arrow]\r\n+Move Right [Right Arrow]\r\n+Jump " +
-    "[Up Arrow]\r\n+Double Jump {When Jumping} [Up Arrow]\r\n";
+            this.lblHelpText.Text = "Controls:\r\n[Left Arrow]:[Move Left]\r\n[Right Arrow]:[Move Right]\r\n[Up Arrow]:[Jump" +
+    "]   \r\n     [Double Tap]:[Double Jump]\r\n\r\n\r\nTips:\r\n-Avoid Spikes\r\n\r\n\r\n\r\n-Get to P" +
+    "ortal\r\n\r\n\r\n\r\n-Press [R] to Die\r\n";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(0)))));
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(89, 294);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(68, 24);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 35;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "danger";
+            // 
+            // pbPortal
+            // 
+            this.pbPortal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(0)))));
+            this.pbPortal.Image = ((System.Drawing.Image)(resources.GetObject("pbPortal.Image")));
+            this.pbPortal.Location = new System.Drawing.Point(89, 361);
+            this.pbPortal.Name = "pbPortal";
+            this.pbPortal.Size = new System.Drawing.Size(61, 44);
+            this.pbPortal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPortal.TabIndex = 36;
+            this.pbPortal.TabStop = false;
+            this.pbPortal.Tag = "platform";
             // 
             // InstructionsPage
             // 
@@ -65,6 +96,8 @@ namespace GameVersion1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(944, 501);
+            this.Controls.Add(this.pbPortal);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.lblHelpText);
             this.Controls.Add(this.btnBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -72,6 +105,8 @@ namespace GameVersion1
             this.Name = "InstructionsPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Instructions";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPortal)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -80,5 +115,7 @@ namespace GameVersion1
 
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lblHelpText;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pbPortal;
     }
 }
