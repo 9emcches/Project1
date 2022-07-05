@@ -297,7 +297,7 @@
             // pbPlayer
             // 
             this.pbPlayer.Image = ((System.Drawing.Image)(resources.GetObject("pbPlayer.Image")));
-            this.pbPlayer.Location = new System.Drawing.Point(543, 366);
+            this.pbPlayer.Location = new System.Drawing.Point(455, 360);
             this.pbPlayer.Margin = new System.Windows.Forms.Padding(4);
             this.pbPlayer.Name = "pbPlayer";
             this.pbPlayer.Size = new System.Drawing.Size(45, 65);
