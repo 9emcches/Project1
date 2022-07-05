@@ -45,29 +45,32 @@ namespace GameVersion1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.Location = new System.Drawing.Point(302, 28);
+            this.pbLogo.Location = new System.Drawing.Point(226, 21);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(360, 109);
+            this.pbLogo.Size = new System.Drawing.Size(506, 201);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 6;
             this.pbLogo.TabStop = false;
             // 
             // lblFact
             // 
-            this.lblFact.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFact.Location = new System.Drawing.Point(130, 250);
+            this.lblFact.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFact.Location = new System.Drawing.Point(220, 255);
+            this.lblFact.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFact.Name = "lblFact";
-            this.lblFact.Size = new System.Drawing.Size(700, 100);
+            this.lblFact.Size = new System.Drawing.Size(525, 76);
             this.lblFact.TabIndex = 7;
             this.lblFact.Text = "*fact";
             this.lblFact.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblDidYouKnow
             // 
-            this.lblDidYouKnow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDidYouKnow.Location = new System.Drawing.Point(130, 210);
+            this.lblDidYouKnow.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDidYouKnow.Location = new System.Drawing.Point(221, 224);
+            this.lblDidYouKnow.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDidYouKnow.Name = "lblDidYouKnow";
-            this.lblDidYouKnow.Size = new System.Drawing.Size(700, 40);
+            this.lblDidYouKnow.Size = new System.Drawing.Size(525, 31);
             this.lblDidYouKnow.TabIndex = 8;
             this.lblDidYouKnow.Text = "Did you know?";
             this.lblDidYouKnow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -75,26 +78,28 @@ namespace GameVersion1
             // pbLoadingAnim
             // 
             this.pbLoadingAnim.Image = ((System.Drawing.Image)(resources.GetObject("pbLoadingAnim.Image")));
-            this.pbLoadingAnim.Location = new System.Drawing.Point(430, 360);
+            this.pbLoadingAnim.Location = new System.Drawing.Point(448, 335);
+            this.pbLoadingAnim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbLoadingAnim.Name = "pbLoadingAnim";
-            this.pbLoadingAnim.Size = new System.Drawing.Size(99, 100);
+            this.pbLoadingAnim.Size = new System.Drawing.Size(74, 76);
             this.pbLoadingAnim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbLoadingAnim.TabIndex = 9;
             this.pbLoadingAnim.TabStop = false;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(130, 460);
+            this.label1.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(223, 413);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(700, 20);
+            this.label1.Size = new System.Drawing.Size(525, 15);
             this.label1.TabIndex = 10;
             this.label1.Text = "Loading...";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SplashScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(211)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(944, 501);
@@ -105,6 +110,7 @@ namespace GameVersion1
             this.Controls.Add(this.pbLogo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "SplashScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

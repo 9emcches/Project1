@@ -20,7 +20,7 @@ namespace GameVersion1
 
         const int MAX = 11; //number of facts + 1
         const int MIN = 0;
-        const int LOADTIME = 500; //1000 times how many seconds to load game
+        const int LOADTIME = 2750; //1000 times how many seconds to load game
         Timer tmr;  //Use timer class
 
         void tmr_Tick(object sender, EventArgs e)
