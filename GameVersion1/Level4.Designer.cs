@@ -235,7 +235,7 @@
             this.pictureBox11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox11.BackgroundImage")));
             this.pictureBox11.Location = new System.Drawing.Point(470, 104);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(261, 45);
+            this.pictureBox11.Size = new System.Drawing.Size(261, 41);
             this.pictureBox11.TabIndex = 46;
             this.pictureBox11.TabStop = false;
             this.pictureBox11.Tag = "movable";
@@ -245,7 +245,7 @@
             this.pictureBox12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox12.BackgroundImage")));
             this.pictureBox12.Location = new System.Drawing.Point(780, -3);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(109, 182);
+            this.pictureBox12.Size = new System.Drawing.Size(109, 124);
             this.pictureBox12.TabIndex = 47;
             this.pictureBox12.TabStop = false;
             this.pictureBox12.Tag = "platform";
