@@ -69,7 +69,7 @@
             // 
             this.pbPreview.Image = ((System.Drawing.Image)(resources.GetObject("pbPreview.Image")));
             this.pbPreview.Location = new System.Drawing.Point(340, 120);
-            this.pbPreview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbPreview.Margin = new System.Windows.Forms.Padding(2);
             this.pbPreview.Name = "pbPreview";
             this.pbPreview.Size = new System.Drawing.Size(524, 270);
             this.pbPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -131,7 +131,7 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btn1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "LevelSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
