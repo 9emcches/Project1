@@ -45,10 +45,10 @@ namespace GameVersion1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
-            this.pbLogo.Location = new System.Drawing.Point(226, 21);
+            this.pbLogo.Location = new System.Drawing.Point(230, 10);
             this.pbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(506, 201);
+            this.pbLogo.Size = new System.Drawing.Size(500, 200);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLogo.TabIndex = 6;
             this.pbLogo.TabStop = false;
@@ -56,7 +56,7 @@ namespace GameVersion1
             // lblFact
             // 
             this.lblFact.Font = new System.Drawing.Font("OCR A Extended", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFact.Location = new System.Drawing.Point(220, 286);
+            this.lblFact.Location = new System.Drawing.Point(220, 285);
             this.lblFact.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFact.Name = "lblFact";
             this.lblFact.Size = new System.Drawing.Size(525, 76);
@@ -67,7 +67,7 @@ namespace GameVersion1
             // lblDidYouKnow
             // 
             this.lblDidYouKnow.Font = new System.Drawing.Font("OCR A Extended", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDidYouKnow.Location = new System.Drawing.Point(220, 255);
+            this.lblDidYouKnow.Location = new System.Drawing.Point(220, 260);
             this.lblDidYouKnow.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDidYouKnow.Name = "lblDidYouKnow";
             this.lblDidYouKnow.Size = new System.Drawing.Size(525, 31);
@@ -78,7 +78,7 @@ namespace GameVersion1
             // pbLoadingAnim
             // 
             this.pbLoadingAnim.Image = ((System.Drawing.Image)(resources.GetObject("pbLoadingAnim.Image")));
-            this.pbLoadingAnim.Location = new System.Drawing.Point(446, 364);
+            this.pbLoadingAnim.Location = new System.Drawing.Point(445, 365);
             this.pbLoadingAnim.Margin = new System.Windows.Forms.Padding(2);
             this.pbLoadingAnim.Name = "pbLoadingAnim";
             this.pbLoadingAnim.Size = new System.Drawing.Size(74, 76);
@@ -89,7 +89,7 @@ namespace GameVersion1
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("OCR A Extended", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(223, 451);
+            this.label1.Location = new System.Drawing.Point(220, 450);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(525, 15);
