@@ -104,7 +104,6 @@ namespace GameVersion1
             this.lblVersionInfo.Text = "Version 6 (Final)\r\nUpdate Notes//\r\nGame Graphics Adjusted -\r\nMovement system Adju" +
     "sted -\r\nLevel Design Elements Added -\r\nBug Fixes and Polish -\r\n\r\n";
             this.lblVersionInfo.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.lblVersionInfo.Click += new System.EventHandler(this.lblVersionInfo_Click);
             // 
             // pictureBox1
             // 

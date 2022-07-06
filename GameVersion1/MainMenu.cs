@@ -47,10 +47,7 @@ namespace GameVersion1
             this.Hide();
         }
 
-        private void lblVersionInfo_Click(object sender, EventArgs e)
-        {
 
-        }
 
 
     }
